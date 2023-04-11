@@ -15,14 +15,18 @@ nitpick = "^0.33.1"
 pylint = "^2.17.2"
 
 ["setup.cfg".flake8]
-ignore = "W503"
+ignore = """
+    W503
+    """
 exclude = """
     tests/,
     */migrations/,
     venv/,
-    env/"""
+    env/
+    """
 per-file-ignores = """
     */settings.py:E501
     tests.py:N802
-    backend/foodgram/api/views.py:I003"""
+    backend/foodgram/api/views.py:I003
+    """
 max-complexity = 10
