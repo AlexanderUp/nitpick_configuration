@@ -1,7 +1,4 @@
 [nitpick.styles]
-include = [
-  "py://nitpick/resources/python/absent"
-]
 
 [nitpick.files.absent]
 ".isort.cfg" = "Move values to pyproject.toml, section [tool.isort]"
