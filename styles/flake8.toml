@@ -1,5 +1,5 @@
 ["setup.cfg".flake8]
-ignore = "W503,"
-exclude = "tests/,*/migrations/,venv/,env/,"
-per-file-ignores = "*/settings.py:E501"
+ignore = "W503, Q000"
+exclude = "tests/, */migrations/, venv/, env/, .venv,"
+per-file-ignores = "*/settings.py:E501, WPS407"
 max-complexity = 10
